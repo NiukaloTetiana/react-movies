@@ -57,6 +57,7 @@ export const Title = styled.h3`
 
 export const Descr = styled.p`
   font-size: 16px;
+  max-width: 700px;
 
   text-shadow: ${({ theme }) => theme.shadows.text};
   margin-bottom: 12px;
