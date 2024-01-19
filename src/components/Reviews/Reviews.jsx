@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getReviewsMovie } from '../services/movies';
+import { getReviewsMovie } from '../../services/movies';
 import { Item, Title, ReviewsDescr, Span } from './Reviews.styled';
 import { toast } from 'react-toastify';
 import Loader from 'components/Loader/Loader';

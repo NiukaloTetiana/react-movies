@@ -13,7 +13,7 @@ import {
 } from './MovieDetails.styled';
 import { TfiControlBackward } from 'react-icons/tfi';
 import Loader from 'components/Loader/Loader';
-import { getMovieDetails } from 'components/services/movies';
+import { getMovieDetails } from 'services/movies';
 import { toast } from 'react-toastify';
 
 const defaultImg =

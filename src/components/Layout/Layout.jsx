@@ -1,4 +1,3 @@
-// import {  } from 'react';
 import { Outlet } from 'react-router-dom';
 import { MdLocalMovies } from 'react-icons/md';
 import { Suspense } from 'react';

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Loader } from 'components/Loader/Loader';
-import { getCastMovie } from '../services/movies';
+import { getCastMovie } from '../../services/movies';
 import { toast } from 'react-toastify';
 import { Img, Item, Text, List, Title, Span } from './Cast.styled';
 

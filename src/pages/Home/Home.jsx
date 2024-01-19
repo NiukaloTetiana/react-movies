@@ -1,6 +1,6 @@
 import Loader from 'components/Loader/Loader';
 import MoviesList from 'components/MoviesList/MoviesList';
-import { getTrendingMovies } from 'components/services/movies';
+import { getTrendingMovies } from 'services/movies';
 import { useEffect, useState } from 'react';
 import { Title } from './Home.styled';
 
