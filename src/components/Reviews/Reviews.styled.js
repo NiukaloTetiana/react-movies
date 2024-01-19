@@ -21,7 +21,7 @@ export const Title = styled.h3`
   font-size: 20px;
 
   text-shadow: ${({ theme }) => theme.shadows.text};
-  padding-left: 10px;
+  padding-left: 6px;
 `;
 
 export const ReviewsDescr = styled.p`

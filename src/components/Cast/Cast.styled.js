@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 9px;
 `;
 
 export const Item = styled.li`
@@ -27,7 +27,7 @@ export const Title = styled.h3`
   font-weight: 700;
   text-shadow: ${({ theme }) => theme.shadows.text};
 
-  padding-left: 10px;
+  padding-left: 6px;
 `;
 
 export const Text = styled.p`
