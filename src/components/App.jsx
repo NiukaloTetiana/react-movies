@@ -1,8 +1,12 @@
-import { lazy } from 'react';
+import { lazy, useContext } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Layout from './Layout/Layout';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Layout from './Layout/Layout';
+import { ToggleTheme } from './ToggleTheme/ToggleTheme';
+import { ThemeProvider } from 'styled-components';
+import { ThemeContext } from './ThemeContext/ThemeContext';
+import { theme } from 'styles/theme';
 
 const Home = lazy(() => import('../pages/Home/Home'));
 const Movies = lazy(() => import('../pages/Movies/Movies'));
@@ -12,8 +16,10 @@ const Cast = lazy(() => import('./Cast/Cast'));
 const Reviews = lazy(() => import('./Reviews/Reviews'));
 
 export const App = () => {
+  const { theme: themeColor } = useContext(ThemeContext);
+
   return (
-    <>
+    <ThemeProvider theme={theme[themeColor]}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -26,6 +32,7 @@ export const App = () => {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <ToastContainer />
-    </>
+      <ToggleTheme />
+    </ThemeProvider>
   );
 };
