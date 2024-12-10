@@ -8,7 +8,7 @@ import { ThemeProvider } from 'components/ThemeContext/ThemeContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/goit-react-hw-05-movies">
+    <BrowserRouter basename="/react-movies">
       <ThemeProvider>
         <App /> <GlobalStyle />
       </ThemeProvider>
